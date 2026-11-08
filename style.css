@@ -1,0 +1,559 @@
+
+/* ==============================
+   CLUSTER LASHES BY YVONE
+   RESPONSIVE WEBSITE DESIGN
+============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fffaf9;
+  color: #292323;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+/* ANNOUNCEMENT */
+
+.announcement {
+  background: #d98c9d;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* NAVIGATION */
+
+.nav {
+  min-height: 80px;
+  padding: 15px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px #0000000a;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.brand-mark {
+  color: #d98c9d;
+  font-size: 35px;
+}
+
+.brand small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #d98c9d;
+}
+
+.nav nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav nav a {
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.nav nav a:hover {
+  color: #d98c9d;
+}
+
+.menu {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+/* GENERAL SECTIONS */
+
+.section,
+.services,
+.booking {
+  padding: 90px 8%;
+}
+
+.eyebrow {
+  color: #d98c9d;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+h2 span,
+h2 em {
+  color: #d98c9d;
+}
+
+/* PROFILE */
+
+.about-owner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.owner-photo img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 180px 180px 12px 12px;
+}
+
+.owner-copy p {
+  margin-bottom: 18px;
+  color: #716767;
+}
+
+.signature {
+  color: #c7798c !important;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.primary,
+.pink {
+  background: #d98c9d;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* SERVICES */
+
+.services {
+  background: #f9eeed;
+}
+
+.heading,
+.section-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 45px;
+}
+
+.heading p:last-child,
+.section-heading p:last-child {
+  color: #817676;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service-grid article {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.service-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px #0000000d;
+}
+
+.service-no {
+  color: #d98c9d;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.service-grid h3 {
+  margin: 15px 0 10px;
+  font-size: 21px;
+}
+
+.service-grid article p {
+  color: #817676;
+  font-size: 14px;
+  min-height: 65px;
+}
+
+.service-grid article div {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.service-grid del {
+  color: #999;
+  font-size: 14px;
+}
+
+.service-grid strong {
+  color: #d17c91;
+  font-size: 21px;
+}
+
+/* GALLERY */
+
+.gallery-section {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.work-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.work-gallery figure {
+  overflow: hidden;
+  background: #f9eeed;
+  border-radius: 8px;
+}
+
+.work-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.work-gallery figure:hover img {
+  transform: scale(1.05);
+}
+
+.work-gallery figcaption {
+  padding: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.gallery-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.gallery-cta p {
+  margin-bottom: 20px;
+}
+
+/* BOOKING */
+
+.booking {
+  background: #f9eeed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.booking-left p {
+  color: #716767;
+}
+
+.big-phone {
+  display: inline-block;
+  font-size: clamp(25px, 3vw, 36px);
+  color: #d17c91;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.booking-card {
+  background: white;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px #0000000a;
+}
+
+.contact-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 25px;
+  align-items: flex-start;
+}
+
+.contact-row > span {
+  font-size: 23px;
+}
+
+.contact-row p {
+  color: #817676;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.contact-row a {
+  color: #d17c91;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.full {
+  width: 100%;
+}
+
+.outline {
+  border: 1px solid #d98c9d;
+  color: #d17c91;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  background: #292323;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e9a6b4;
+}
+
+footer p {
+  color: #d3caca;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+  .section,
+  .services,
+  .booking {
+    padding: 65px 5%;
+  }
+
+  .about-owner {
+    gap: 30px;
+  }
+
+  .owner-photo img {
+    height: 420px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .work-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .work-gallery img {
+    height: 280px;
+  }
+
+  .booking {
+    gap: 30px;
+  }
+}
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+  .announcement {
+    font-size: 10px;
+    padding: 9px 8px;
+  }
+
+  .nav {
+    padding: 12px 5%;
+    min-height: 70px;
+  }
+
+  .brand {
+    font-size: 17px;
+  }
+
+  .brand-mark {
+    font-size: 29px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .nav nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 8px 15px #00000012;
+  }
+
+  .nav nav.active {
+    display: flex;
+  }
+
+  .section,
+  .services,
+  .booking {
+    padding: 55px 6%;
+  }
+
+  .about-owner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .owner-photo img {
+    height: 380px;
+    max-width: 100%;
+    border-radius: 150px 150px 10px 10px;
+  }
+
+  .owner-copy {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-grid article {
+    padding: 25px;
+  }
+
+  .service-grid article p {
+    min-height: auto;
+  }
+
+  .work-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .work-gallery img {
+    height: 190px;
+  }
+
+  .work-gallery figcaption {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+
+  .booking {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .booking-card {
+    padding: 23px;
+  }
+
+  .big-phone {
+    font-size: 28px;
+  }
+
+  .btn {
+    padding: 13px 20px;
+  }
+}
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 360px) {
+
+  .brand {
+    font-size: 15px;
+  }
+
+  .work-gallery img {
+    height: 155px;
+  }
+
+  .owner-photo img {
+    height: 310px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
